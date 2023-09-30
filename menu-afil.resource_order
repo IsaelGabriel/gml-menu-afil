@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"handle_option","order":2,"path":"scripts/handle_option/handle_option.yy",},
+    {"name":"rm_gameplay","order":1,"path":"rooms/rm_gameplay/rm_gameplay.yy",},
     {"name":"mouse_in_option","order":1,"path":"scripts/mouse_in_option/mouse_in_option.yy",},
   ],
 }

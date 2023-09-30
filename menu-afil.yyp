@@ -36,6 +36,7 @@
   "resources": [
     {"id":{"name":"handle_option","path":"scripts/handle_option/handle_option.yy",},},
     {"id":{"name":"obj_main_menu","path":"objects/obj_main_menu/obj_main_menu.yy",},},
+    {"id":{"name":"rm_gameplay","path":"rooms/rm_gameplay/rm_gameplay.yy",},},
     {"id":{"name":"config_default_font","path":"scripts/config_default_font/config_default_font.yy",},},
     {"id":{"name":"mouse_in_option","path":"scripts/mouse_in_option/mouse_in_option.yy",},},
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},},
@@ -43,6 +44,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
+    {"roomId":{"name":"rm_gameplay","path":"rooms/rm_gameplay/rm_gameplay.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
