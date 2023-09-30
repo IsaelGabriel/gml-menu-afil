@@ -16,5 +16,8 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"handle_option","order":2,"path":"scripts/handle_option/handle_option.yy",},
+    {"name":"mouse_in_option","order":1,"path":"scripts/mouse_in_option/mouse_in_option.yy",},
+  ],
 }

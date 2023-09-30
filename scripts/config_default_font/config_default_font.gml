@@ -1,3 +1,5 @@
+/// @function config_default_font();
+
 function config_default_font(){
 	// Center text
 	draw_set_halign(fa_center);
