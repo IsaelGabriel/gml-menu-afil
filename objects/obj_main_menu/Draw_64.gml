@@ -1,8 +1,4 @@
-// Center text
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-draw_set_font(fnt_default);
+font_reset();
 
 for(var i = 0; i < array_length(options); i++) {
 	if(i == index) {
