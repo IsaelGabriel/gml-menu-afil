@@ -12,7 +12,9 @@ function handle_option(_option){
 		break;
 		
 		case "Sair":
-		
+			if show_question("Você deseja sair?") {
+				game_end();
+			}
 		break;
 		
 		
