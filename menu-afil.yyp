@@ -35,7 +35,7 @@
   },
   "resources": [
     {"id":{"name":"obj_main_menu","path":"objects/obj_main_menu/obj_main_menu.yy",},},
-    {"id":{"name":"font_reset","path":"scripts/font_reset/font_reset.yy",},},
+    {"id":{"name":"config_default_font","path":"scripts/config_default_font/config_default_font.yy",},},
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
