@@ -1,7 +1,7 @@
 global.main_menu = self;
 
-main_options = ["Jogar", "Configurações", "Sair"];
-config_options = ["Volume", "Tela cheia", "Voltar"];
+main_options = ["opt:play", "opt:config", "opt:exit"];
+config_options = ["opt:volume", "opt:fullscreen", "opt:config_back"];
 
 options = main_options;
 
