@@ -134,10 +134,12 @@ function mouse_in_option(_x, _y, _rect_scale, _option, _font = fnt_default){
 function handle_option(_option, _using_mouse = false){
 	switch _option {
 		case "opt:play":
+			window_set_caption("Gameplay");
 			room_goto(rm_gameplay);
 		break;
 		
 		case "opt:config":
+			window_set_caption("Configurações")
 			global.main_menu.index = 0;
 			global.main_menu.options = global.main_menu.config_options;
 		break;
@@ -148,6 +150,7 @@ function handle_option(_option, _using_mouse = false){
 			}
 			
 		case "opt:config_back":
+			window_set_caption(global.main_menu.title);
 			global.main_menu.index = 0;
 			global.main_menu.options = global.main_menu.main_options;
 		break;

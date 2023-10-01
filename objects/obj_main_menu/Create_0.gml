@@ -18,3 +18,7 @@ rect_scale = 1.4;
 
 x = display_get_gui_width() / 2 // Center x
 y = (display_get_gui_height() / 2) - (((array_length(options) - 1) * y_offset) / 2) // Center y
+
+title = "Menu principal"
+
+window_set_caption(title)
