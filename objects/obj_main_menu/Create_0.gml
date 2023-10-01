@@ -1,4 +1,7 @@
 global.main_menu = self;
+global.window_width = 800;
+global.window_height = 600;
+
 
 main_options = ["opt:play", "opt:config", "opt:exit"];
 config_options = ["opt:volume", "opt:fullscreen", "opt:config_back"];

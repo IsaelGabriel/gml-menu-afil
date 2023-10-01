@@ -21,6 +21,16 @@ function handle_option(_option){
 			global.main_menu.options = global.main_menu.main_options;
 		break;
 		
+		case "opt:fullscreen":
+			var _fullscreen = !window_get_fullscreen();
+			
+			window_set_fullscreen(_fullscreen);
+			if(!_fullscreen) {
+				window_center();
+				window_set_size(global.window_width, global.window_height);
+			}
+			
+		break;
 		
 		default: return;
 	}
