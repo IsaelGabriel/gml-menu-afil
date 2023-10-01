@@ -39,6 +39,7 @@
     {"id":{"name":"rm_gameplay","path":"rooms/rm_gameplay/rm_gameplay.yy",},},
     {"id":{"name":"config_default_font","path":"scripts/config_default_font/config_default_font.yy",},},
     {"id":{"name":"mouse_in_option","path":"scripts/mouse_in_option/mouse_in_option.yy",},},
+    {"id":{"name":"draw_option","path":"scripts/draw_option/draw_option.yy",},},
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
   ],

@@ -9,20 +9,7 @@ for(var i = 0; i < array_length(options); i++) {
 		if(device_mouse_check_button_pressed(0, mb_left)) handle_option(options[i]);
 	}
 	
-	if(i == index) {
-		draw_set_color(c_teal);
-		draw_text_transformed(x,_y_pos, options[i], selected_scale, selected_scale, 0);
-		
-		// Reset font color
-		draw_set_color($BABABA);
-	}else {
-		draw_text(x, _y_pos, options[i]);
-	}	
-	
-	
-	
-	//draw_text(x, y + (y_offset * i), options[i]);
-	
+	draw_option(x, _y_pos, options[i], i == index);
 }
 
 draw_set_font(-1); // Reset font
