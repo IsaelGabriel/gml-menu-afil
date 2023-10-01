@@ -1,4 +1,9 @@
-options = ["Jogar", "Configurações", "Sair"];
+global.main_menu = self;
+
+main_options = ["Jogar", "Configurações", "Sair"];
+config_options = ["Volume", "Tela cheia", "Voltar"];
+
+options = main_options;
 
 index = 0;
 
