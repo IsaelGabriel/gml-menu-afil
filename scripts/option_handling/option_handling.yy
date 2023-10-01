@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "draw_option",
+  "name": "option_handling",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -17,9 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"handle_option","order":2,"path":"scripts/handle_option/handle_option.yy",},
     {"name":"rm_gameplay","order":1,"path":"rooms/rm_gameplay/rm_gameplay.yy",},
-    {"name":"mouse_in_option","order":1,"path":"scripts/mouse_in_option/mouse_in_option.yy",},
-    {"name":"draw_option","order":3,"path":"scripts/draw_option/draw_option.yy",},
+    {"name":"option_handling","order":3,"path":"scripts/option_handling/option_handling.yy",},
   ],
 }

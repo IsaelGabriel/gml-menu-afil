@@ -1,0 +1,1 @@
+if(options[index] == "opt:volume") handle_option(options[index]);

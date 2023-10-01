@@ -1,6 +1,8 @@
 var _key = keyboard_lastkey;
 
-if(_key == vk_space || _key == vk_enter) {
+var _handle = (_key == vk_space || _key == vk_enter) && options[index] != "opt:volume";
+
+if(_handle) {
 	handle_option(options[index]);
 	return;
 }
