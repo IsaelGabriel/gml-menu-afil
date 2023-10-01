@@ -1,4 +1,7 @@
-selected_scale = 1.4;
+#macro VOLUME_BAR_WIDTH (window_get_width() / 3)
+#macro VOLUME_BAR_HEIGHT 1
+#macro SELECTION_SCALE 1.25
+
 
 /// @function					draw_option(_x, _y, _option, _selected);
 /// @description				Draws an option on screen, returns it's height
@@ -10,14 +13,15 @@ selected_scale = 1.4;
 
 function draw_option(_x, _y, _option = "opt:default", _selected = false, _font = fnt_default){
 	switch _option {
+		case "opt:volume": return draw_volume(_x, _y, _selected, _font);
 		default:
 			var _text = get_option_text(_option);
 			if(_selected) {
 			draw_set_color(c_teal);
-			draw_text_transformed(_x,_y, _text, selected_scale, selected_scale, 0);
+			draw_text_transformed(_x,_y, _text, SELECTION_SCALE, SELECTION_SCALE, 0);
 		
 			// Reset font color
-			draw_set_color($BABABA);
+			draw_set_color(global.default_gui_text_color);
 			}else {
 				draw_text(_x, _y, _text);
 			}
@@ -26,8 +30,9 @@ function draw_option(_x, _y, _option = "opt:default", _selected = false, _font =
 	}
 }
 
-/// @function get_option_text(_option);
-/// @description sets text for text only options
+/// @function					get_option_text(_option);
+/// @description				Sets text for text only options
+/// @param {string} _option		Option Key
 function get_option_text(_option) {
 	switch _option {
 		case "opt:play": return "Jogar";
@@ -43,4 +48,24 @@ function get_option_text(_option) {
 		
 		default: return "None";
 	}
+}
+
+/// @function draw_volume(_x, _y, _selected, _font);
+/// @description Draws volume option on screen, returns size
+/// @param {real} _x			Option's x position
+/// @param {real} _y			Option's y position
+/// @param {bool} _selected		Checks if volume option is selected
+/// @param {resource} _font		Font used for text
+function draw_volume(_x, _y, _selected = false, _font = fnt_default) {
+	var _height = font_get_size(_font);
+	draw_text(_x, _y, "Volume");
+	_y += _height * 2;
+	
+	draw_set_color(c_lime);
+	draw_line(_x - (VOLUME_BAR_WIDTH / 2), _y, _x + (VOLUME_BAR_WIDTH / 2), _y);
+	_height += VOLUME_BAR_HEIGHT;
+	
+	draw_set_color(global.default_gui_text_color);
+	
+	return _height;	
 }

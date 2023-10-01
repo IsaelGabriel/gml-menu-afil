@@ -9,5 +9,5 @@ function config_default_font(){
 	draw_set_font(fnt_default);
 	
 	// Set font color
-	draw_set_color($BABABA);
+	draw_set_color(global.default_gui_text_color);
 }
